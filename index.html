@@ -24,108 +24,79 @@
         </style>
     </head>
 
-  <body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
+  <body id="top" data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+            <img src="./img/archivo-cero_logo.jpg" class="navbar-brand-img" alt="logo archivo cero">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
     
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-          <img src="./img/archivo-cero_logo.jpg" class="navbar-brand-img" alt="logo archivo cero">
-        </a>
-    
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-    
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button>
-    
-          <!-- Navigation -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Inicio
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="/#metodologia" aria-haspopup="true" aria-expanded="false">
-                  Metodología
-                </a>
-              </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                (+54 11) 4856-2280
-              </a>
-              
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                info@archivocero.com.ar
-              </a>
-              
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="https://landkit.goodthemes.co/#" aria-haspopup="true" aria-expanded="false">
-                Documentation
-              </a>
-              
-            </li> -->
-          </ul>
-    
-          <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-danger lift ms-auto" href="#" target="_blank">
-            Contacto
-          </a>
-    
-        </div>
-    
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x">X</i>
+                </button>
+                <!-- Navigation -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#top" aria-haspopup="true" aria-expanded="false">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#soluciones-linguisticas" aria-haspopup="true" aria-expanded="false">Servicios Lingüísticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#quienes-somos" aria-haspopup="true" aria-expanded="false">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#footer" aria-haspopup="true" aria-expanded="false">Contacto</a>
+                    </li>
+                </ul>
+                <!-- Button -->
+                <a class="navbar-btn btn btn-sm btn-danger-soft lift ms-auto" href="#">En</a>
+            </div>
       </div>
     </nav>
 
     <!-- INTRO -->
     <section class="pt-4 pt-md-10">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+                    <!-- Image -->
+                    <img src="./Landkit_files/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
+                </div>
+                
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+                    <!-- Heading -->
+                    <h1 class="display-4 text-center text-md-start">
+                    Somos <span class="text-danger">Archivo Cero</span><br>
+                    Soluciones Lingüísticas
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+                    Trabajamos con español, inglés, francés y portugués.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="text-center text-md-start">
+                        <a href="/#metodologia" class="btn btn-danger shadow lift me-1">
+                            Ver más <!-- <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i> -->
+                        </a>
+                        <a href="/#soluciones-linguisticas" class="btn btn-danger-soft lift">
+                            Contactar
+                        </a>
+                    </div>
+                </div>
 
-            <!-- Image -->
-            <img src="./Landkit_files/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
-
-            <!-- Heading -->
-            <h1 class="display-4 text-center text-md-start">
-              Somos <span class="text-danger">Archivo Cero</span><br>
-              Soluciones Lingüísticas
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Trabajamos con español, inglés, francés y portugués.
-            </p>
-
-            <!-- Buttons -->
-            <div class="text-center text-md-start">
-              <a href="#" class="btn btn-danger shadow lift me-1">
-                Ver más <!-- <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i> -->
-              </a>
-              <a href="#" class="btn btn-danger-soft lift">
-                Contactar
-              </a>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
     </section>
 
     <!-- METODOLOGIA -->
@@ -220,18 +191,16 @@
     </section>
 
     <!-- SOLUCIONES -->
-    <section id="soluciones-linguisticas" class="pt-8 pt-md-11 pb-10 bg-gradient-light-white">
+    <section id="soluciones-linguisticas" class="pt-8 pt-md-11 pb-5 bg-gradient-light-white">
         <div class="container">
-
             <div class="row align-items-center justify-content-between mb-8 mb-md-11">
+                
                 <div class="col-12 col-md-6 order-md-2 aos-init aos-animate" data-aos="fade-left">
-
                     <!-- Heading -->
                     <h2>
                         SOLUCIONES LINGÜÍSTICAS <br>
                         <span>Trabajamos con <span class="text-danger" data-typed="{&quot;strings&quot;:[&quot;español.&quot;, &quot;inglés.&quot;, &quot;francés.&quot;, &quot;portugués.&quot;]}">español.</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></span>
                     </h2>
-
                     <!-- Text -->
                     <p class="fs-lg text-muted mb-4">
                         <strong class="text-danger">TRADUCCIÓN:</strong> Científicas. Públicas y legales. Técnicas. Localización y Transcreation.
@@ -245,22 +214,18 @@
                     <p class="fs-lg text-muted mb-4">
                         <strong class="text-danger">CORRECCIONES:</strong> Corrección y edición de todo tipo de textos.
                     </p>
-
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 order-md-1 aos-init aos-animate" data-aos="fade-right">
 
+                <div class="col-12 col-md-6 col-lg-5 order-md-1 aos-init aos-animate" data-aos="fade-right">
                     <!-- Card -->
                     <div class="card shadow-light-lg lift lift-lg">
-
                         <!-- Image -->
                         <img src="./img/illustration-2.png" alt="..." class="card-img-top">
-
                         <!-- Shape -->
                         <div class="position-relative">
                             <div class="shape shape-bottom shape-fluid-x text-white">
                             <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg></div>
                         </div>
-
                         <!-- Body -->
                         <div class="card-body">
                             <!-- Form -->
@@ -274,6 +239,10 @@
                                     <label for="cardEmail">Email</label>
                                 </div>
                                 <div class="form-floating">
+                                    <input type="tel" class="form-control form-control-flush" id="cardTel" placeholder="Teléfono">
+                                    <label for="cardTel">Teléfono</label>
+                                </div>
+                                <div class="form-floating">
                                     <input type="text" class="form-control form-control-flush" id="cardMessage" placeholder="Message">
                                     <label for="cardPassword">Mensaje</label>
                                 </div>
@@ -282,245 +251,236 @@
                                 </div>
                             </form>
                         </div>
-
                     </div>
+                </div>
 
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+    <!-- TRADUCCIONES -->
+    <section id="traducciones" class="pt-10 bg-danger">
+        <div class="container">
+
+            <div class="row justify-content-center pb-6">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+                    <!-- Heading -->
+                    <h1 class="text-light">
+                        TRADUCCIONES
+                    </h1>
                 </div>
             </div> <!-- / .row -->
 
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-9 text-center mb-3">
-                    <!-- Heading -->
-                    <h2>Quiénes <span>Somos</span></h2>
-                    <!-- Text -->
-                    <p class="fs-lg text-muted mb-6">
-                    <span class="text-danger">Archivo Cero Traducciones</span> es una empresa <em>boutique</em>, en la que conviven la tradición de la palabra y la innovación. Una empresa que crece a escala humana, centrándose en el placer por el trabajo que hacemos y en el vínculo profesional que nos une a nuestros clientes, a nuestros colaboradores y a nuestros proveedores externos.
-                    </p>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <!-- Card -->
-                    <div class="card shadow-light-lg lift lift-lg">
-                        <!-- Image -->
-                        <img src="https://via.placeholder.com/280x185.png?text=img-perfil" alt="Patricia" class="card-img-top">
-                        <!-- Body -->
-                        <div class="card-body">
-                            <h4>Patricia Archivo Cero</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <!-- Card -->
-                    <div class="card shadow-light-lg lift lift-lg">
-                        <!-- Image -->
-                        <img src="https://via.placeholder.com/280x185.png?text=img-perfil" alt="Valeria" class="card-img-top">
-                        <!-- Body -->
-                        <div class="card-body">
-                            <h4>Valeria Archivo Cero</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-12 aos-init aos-animate mt-10" data-aos="fade-right">
-                    <!-- List -->
+            <div class="row">
+                <div class="col-12 col-md-6">
+      
+                    <!-- Item -->
                     <div class="d-flex">
-                        <!-- Icon -->
-                        <div class="icon text-primary">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z" fill="#df4759"></path><path d="M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z" fill="#df4759" opacity=".3"></path></g></svg>
+                        <!-- Badge -->
+                        <div class="badge badge-lg badge-rounded-circle bg-dark">
+                            <span>C</span>
                         </div>
                         <div class="ms-5">
                             <!-- Heading -->
-                            <h3 class="mb-3">Proveemos soluciones lingüísticas</h3>
+                            <h4 class="text-light">
+                                Científicas
+                            </h4>
                             <!-- Text -->
-                            <p class="text-muted mb-6">
-                                Traducciones, interpretaciones, localización de sitios web y software, etc. para empresas del ámbito local desde 1992 y a empresas del exterior desde 2001. Ofrecemos una respuesta rápida y eficaz, que culmina con un proceso de control de calidad del que fuimos pioneros.
+                            <p class="text-light mb-6 mb-md-8">
+                                Patentes, prospectos, protocolos, manuales, dossiers, papers, artículos de investigación, recetas, formularios de consentimiento, historias clínicas y otros escritos de interés para la comunidad científica internacional.
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <!-- Icon -->
-                        <div class="icon text-primary">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z" fill="#df4759"></path><path d="M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z" fill="#df4759" opacity=".3"></path></g></svg>
-                        </div>
-                        <div class="ms-5">
-                            <!-- Heading -->
-                            <h3 class="mb-3">
-                                Algunas industrias con las que trabajamos
-                            </h3>
-                            <!-- Text -->
-                            <p class="text-muted">
-                                <strong>FINANZAS</strong> <br>
-                                <em>ICBC</em>
-                            <p>
-                            <p class="text-muted">
-                                <strong>MEDICINA & FARMACIA</strong> <br>
-                                <em>Baliarda, Fundación Interamericana del Corazón</em>
-                            <p>
-                            <p class="text-muted">
-                                <strong>ARTES</strong> <br>
-                                <em>Museo Fernandez Blanco, CAPACOA (Canadian Association for the Performing Arts), Edinburgh Fringe Festival</em>
-                            <p>
-                            <p class="text-muted">
-                                <strong>ORGANISMOS PÚBLICOS LOCALES E INTERNACIONALES</strong> <br>
-                                <em>Union Europea, Naciones Unidas, ACNUR</em> <br><br>
-                                Entre otras.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
+                  <!-- Item -->
+                  <div class="d-flex">
+      
+                    <!-- Badge -->
+                    <div class="badge badge-lg badge-rounded-circle bg-dark">
+                      <span>T</span>
+                    </div>
+      
+                    <div class="ms-5">
+      
+                      <!-- Heading -->
+                      <h4 class="text-light">
+                        Técnicas
+                      </h4>
+      
+                      <!-- Text -->
+                      <p class="text-light mb-6 mb-md-0">
+                        Informática, medio ambiente, industrias varias, gastronomía.
+                      </p>
+      
+                    </div>
+      
+                  </div>
+      
+                </div>
+                <div class="col-12 col-md-6">
+      
+                  <!-- Item -->
+                  <div class="d-flex">
+      
+                    <!-- Badge -->
+                    <div class="badge badge-lg badge-rounded-circle bg-dark">
+                      <span>PL</span>
+                    </div>
+      
+                    <div class="ms-5">
+      
+                      <!-- Heading -->
+                      <h4 class="text-light">
+                        Públicas y legales
+                      </h4>
+      
+                      <!-- Text -->
+                      <p class="text-light mb-6 mb-md-8">
+                        Documentos personales, testamentos, contratos, escrituras, estatutos y actas societarias, sentencias, exhortos, poderes, patentes de invención, cartas de crédito, informes financieros, balances.
+                      </p>
+      
+                    </div>
+      
+                  </div>
+      
+                  <!-- Item -->
+                  <div class="d-flex">
+      
+                    <!-- Badge -->
+                    <div class="badge badge-lg badge-rounded-circle bg-dark">
+                      <span>LT</span>
+                    </div>
+      
+                    <div class="ms-5">
+      
+                      <!-- Heading -->
+                      <h4 class="text-light">
+                        Localización y Transcreation
+                      </h4>
+      
+                      <!-- Text -->
+                      <p class="text-light mb-6 mb-md-0">
+                        Software y sitios web. La adaptación a otro idioma de un mensaje publicitario, habitualmente cargado de connotaciones culturales.
+                      </p>
+      
+                    </div>
+      
+                  </div>
+      
+                </div>
             </div> <!-- / .row -->
 
         </div> <!-- / .container -->
     </section>
-    
-
-    <!-- PRICING -->
-    <section class="pt-10 bg-danger">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <!-- Heading -->
-            <h1 class="text-light">
-              TRADUCCIONES
-            </h1>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- FAQ -->
-    <section class="pt-4 bg-danger">
-      <div class="container pt-4 pt-md-4">
-        <div class="row">
-          <div class="col-12 col-md-6">
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-dark">
-                <span>C</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-light">
-                  Científicas
-                </h4>
-
-                <!-- Text -->
-                <p class="text-light mb-6 mb-md-8">
-                  Patentes, prospectos, protocolos, manuales, dossiers, papers, artículos de investigación, recetas, formularios de consentimiento, historias clínicas y otros escritos de interés para la comunidad científica internacional.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-dark">
-                <span>T</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-light">
-                  Técnicas
-                </h4>
-
-                <!-- Text -->
-                <p class="text-light mb-6 mb-md-0">
-                  Informática, medio ambiente, industrias varias, gastronomía.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6">
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-dark">
-                <span>PL</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-light">
-                  Públicas y legales
-                </h4>
-
-                <!-- Text -->
-                <p class="text-light mb-6 mb-md-8">
-                  Documentos personales, testamentos, contratos, escrituras, estatutos y actas societarias, sentencias, exhortos, poderes, patentes de invención, cartas de crédito, informes financieros, balances.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-dark">
-                <span>LT</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-light">
-                  Localización y Transcreation
-                </h4>
-
-                <!-- Text -->
-                <p class="text-light mb-6 mb-md-0">
-                  Software y sitios web. La adaptación a otro idioma de un mensaje publicitario, habitualmente cargado de connotaciones culturales.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
     <!-- CTA -->
-    <section class="py-8 py-md-11 bg-danger">
-      <div class="container">
-        <div class="row justify-content-center">
-          
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+    <section class="py-8 py-md-9 bg-danger">
+        <div class="container">
+          <div class="row justify-content-center">
+            
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
     </section>
-
     <!-- SHAPE -->
     <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x text-gray-200">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>      </div>
+        <div class="shape shape-bottom shape-fluid-x text-gray-100">
+          <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>      </div>
     </div>
 
+    <section id="quienes-somos" class="pt-10 mb-10">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9 text-center mb-3">
+                <!-- Heading -->
+                <h2>Quiénes <span>Somos</span></h2>
+                <!-- Text -->
+                <p class="fs-lg text-muted mb-6">
+                <span class="text-danger">Archivo Cero Traducciones</span> es una empresa <em>boutique</em>, en la que conviven la tradición de la palabra y la innovación. Una empresa que crece a escala humana, centrándose en el placer por el trabajo que hacemos y en el vínculo profesional que nos une a nuestros clientes, a nuestros colaboradores y a nuestros proveedores externos.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <!-- Card -->
+                <div class="card shadow-light-lg lift lift-lg">
+                    <!-- Image -->
+                    <img src="https://via.placeholder.com/280x185.png?text=img-perfil" alt="Patricia" class="card-img-top">
+                    <!-- Body -->
+                    <div class="card-body">
+                        <h4>Patricia Archivo Cero</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <!-- Card -->
+                <div class="card shadow-light-lg lift lift-lg">
+                    <!-- Image -->
+                    <img src="https://via.placeholder.com/280x185.png?text=img-perfil" alt="Valeria" class="card-img-top">
+                    <!-- Body -->
+                    <div class="card-body">
+                        <h4>Valeria Archivo Cero</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10 col-lg-10 aos-init aos-animate mt-10" data-aos="fade-right">
+                <!-- List -->
+                <div class="d-flex">
+                    <!-- Icon -->
+                    <div class="icon text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z" fill="#df4759"></path><path d="M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z" fill="#df4759" opacity=".3"></path></g></svg>
+                    </div>
+                    <div class="ms-5">
+                        <!-- Heading -->
+                        <h3 class="mb-3">Proveemos soluciones lingüísticas</h3>
+                        <!-- Text -->
+                        <p class="text-muted mb-6">
+                            Traducciones, interpretaciones, localización de sitios web y software, etc. para empresas del ámbito local desde 1992 y a empresas del exterior desde 2001. Ofrecemos una respuesta rápida y eficaz, que culmina con un proceso de control de calidad del que fuimos pioneros.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <!-- Icon -->
+                    <div class="icon text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z" fill="#df4759"></path><path d="M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z" fill="#df4759" opacity=".3"></path></g></svg>
+                    </div>
+                    <div class="ms-5">
+                        <!-- Heading -->
+                        <h3 class="mb-3">
+                            Algunas industrias con las que trabajamos
+                        </h3>
+                        <!-- Text -->
+                        <p class="text-muted">
+                            <strong>FINANZAS</strong> <br>
+                            <em>ICBC</em>
+                        <p>
+                        <p class="text-muted">
+                            <strong>MEDICINA & FARMACIA</strong> <br>
+                            <em>Baliarda, Fundación Interamericana del Corazón</em>
+                        <p>
+                        <p class="text-muted">
+                            <strong>ARTES</strong> <br>
+                            <em>Museo Fernandez Blanco, CAPACOA (Canadian Association for the Performing Arts), Edinburgh Fringe Festival</em>
+                        <p>
+                        <p class="text-muted">
+                            <strong>ORGANISMOS PÚBLICOS LOCALES E INTERNACIONALES</strong> <br>
+                            <em>Union Europea, Naciones Unidas, ACNUR</em> <br><br>
+                            Entre otras.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- / .row -->
+
+    </section>
+
     <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-gray-200">
+    <footer id="footer" class="py-8 py-md-11 bg-gray-200">
       <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-12 col-md-3 col-lg-3">
         
                 <!-- Brand -->
                 <h3>Archivo Cero</h3>
@@ -557,7 +517,7 @@
         
             </div>
 
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-12 col-md-3 col-lg-3">
         
                 <!-- Heading -->
                 <h6 class="fw-bold text-uppercase text-gray-700">
@@ -574,7 +534,7 @@
                 </ul>
         
             </div>
-            <div class="col-12 col-md-4 col-lg-5">
+            <div class="col-12 col-md-3 col-lg-3">
         
                 <!-- Heading -->
                 <h6 class="fw-bold text-uppercase text-gray-700">
@@ -590,11 +550,23 @@
                 </li>
                 <li class="mb-3">
                     <a href="#" class="text-reset">
-                    Aguirre 525 7ºA, Ciudad de Buenos Aires <br>
+                    Aguirre 525 7ºA <br>
+                    Ciudad de Buenos Aires <br>
                     Argentina (C1414ASK)
                     </a>
                 </li>
                 </ul>
+        
+            </div>
+
+            <div class="col-12 col-md-3 col-lg-3">
+        
+                <!-- Heading -->
+        
+                <!-- List -->
+                <a href="https://translatorswithoutborders.org/" target="_blank">
+                    <img src="./img/TWB-logo.png" class="w-100" alt="TWB">
+                </a>
         
             </div>
           
