@@ -21,6 +21,10 @@
             html {
                 scroll-behavior: smooth;
             }
+            .carousel-control-next-icon, .carousel-control-prev-icon {
+                background-color: black;
+                border-radius: 5px;
+            }
         </style>
     </head>
 
@@ -41,7 +45,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <!-- Toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fe fe-x">X</i>
+                    <i class="btn-close" style="font-size: 36px;"></i>
+                    <!-- <i class="fe fe-x"></i> -->
                 </button>
                 <!-- Navigation -->
                 <ul class="navbar-nav ms-auto">
@@ -70,8 +75,37 @@
             <div class="row align-items-center">
                 
                 <div class="col-12 col-md-5 col-lg-6 order-md-2">
-                    <!-- Image -->
-                    <img src="./img/img-intro.jpg" class="img-fluid mw-md-130 mb-6 mb-md-0 aos-init aos-animate" alt="image intro" data-aos="fade-up" data-aos-delay="100">
+                    <!-- <img src="./img/img-intro.jpg" class="img-fluid mw-md-130 mb-6 mb-md-0 aos-init aos-animate" alt="image intro" data-aos="fade-up" data-aos-delay="100"> -->
+
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/img-intro.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/img-intro-01.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/img-intro-02.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/img-intro-03.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div>
+                        <h6 class="text-muted text-center mt-2">Argentina, uno de los países más prestigiosos en materia de traducción por la alta profesionalidad y calidad de sus traductores y sus centros de estudios lingüísticos y de traducción, pioneros en el mundo.</h6>
+                    </div>
+
                 </div>
                 
                 <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
@@ -401,30 +435,52 @@
                     </p>
                 </div>
                 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-5">
                     <!-- Card -->
                     <div class="card shadow-light-lg lift lift-lg mb-5">
                         <!-- Image -->
                         <img src="./img/act_patricia.jpg" alt="Patricia" class="card-img-top">
                         <!-- Body -->
                         <div class="card-body">
-                            <h4>Patricia Archivo Cero</h4>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h4>Patricia Cohan</h4>
+                            <p class="text-muted">
+                                <em>Propietaria y Gerente de ACT</em> <br><br>
+                                <small>La traducción no fue mi primer oficio. Mi primera formación fue como profesora de francés. Actividad a la que sigo dedicándome en menor escala y con total placer y curiosidad.</small>
+                            </p>
+                            <a class="btn-link text-danger" data-bs-toggle="collapse" href="#collapsePatricia" role="button" aria-expanded="false" aria-controls="collapsePatricia">Ver más</a>
+                            <div class="collapse" id="collapsePatricia">
+                                <small class="text-muted"> 
+                                    Me convertí en traductora por demanda de las empresas en las que daba clase y así inicié mi capacitación y luego en edición y corrección de textos. Descubrí lo apasionante que pueden ser ambas profesiones. Mediar en la comunicación interlingüística y ver los resultados. <br><br>
+                                    Dirigir esta empresa boutique a veces me encanta, otras me desafía y otras me inquieta. Es así porque los retos son múltiples, una actividad humana en un mundo en permanente cambio donde es necesario encontrar nuevas formas de adaptarse y brindar soluciones. ¿Cómo separar lo humano de lo humano? <br><br>
+                                    Me gusta trabajar con la gente y sus idiomas y ayudar a que se comuniquen. Me gustan las tareas de organización interna, armar las mejores propuestas posibles para clientes y colaboradores. Mantener una fluida cooperación con todes. Defender la traducción humana para que sigamos siendo humanos.
+                                </small>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
-                <!-- Card -->
-                <div class="card shadow-light-lg lift lift-lg">
-                    <!-- Image -->
-                    <img src="./img/act_valeria.jpg" alt="Valeria" class="card-img-top">
-                    <!-- Body -->
-                    <div class="card-body">
-                        <h4>Valeria Archivo Cero</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="col-12 col-md-5">
+                    <!-- Card -->
+                    <div class="card shadow-light-lg lift lift-lg">
+                        <!-- Image -->
+                        <img src="./img/act_valeria.jpg" alt="Valeria" class="card-img-top">
+                        <!-- Body -->
+                        <div class="card-body">
+                            <h4>Valeria Pazo</h4>
+                            <p class="text-muted">
+                                <em>Gerente de Proyecto de ACT</em> <br><br>
+                                <small>Mi tarea principal es evaluar y coordinar los proyectos y prepararlos para su entrega final al cliente.</small>
+                            </p>
+                            <a class="btn-link text-danger" data-bs-toggle="collapse" href="#collapseValeria" role="button" aria-expanded="false" aria-controls="collapseValeria">Ver más</a>
+                            <div class="collapse" id="collapseValeria">
+                                <small class="text-muted"> 
+                                    Trabajo en Archivo Cero desde el año 2002, cuando empecé como auxiliar de traducción. Aquí me fui formando y capacitando a la par de mi carrera universitaria. También tengo estudios de francés y portugués. <br><br>
+                                    Siempre me apasionaron los idiomas, por eso decidí dedicarme a ellos profesionalmente desde temprana edad. Me gusta encontrar equivalentes idiomáticos y establecer un puente entre una cultura y otra. También valoro poder aprender todos los días acerca de distintos temas y muy variados: un día sobre bancos, otro día sobre los refugiados y otro sobre farmacia. <br><br>
+                                    Pero, sobre todo, me interesa seguir defendiendo esta valiosísima y -muchas veces oculta- profesión como pilar de la comunicación humana.
+                                </small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             
             <div class="col-12 col-md-12 col-lg-12 aos-init aos-animate mt-10" data-aos="fade-right">
                 <!-- List -->
