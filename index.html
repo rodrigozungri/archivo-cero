@@ -163,22 +163,22 @@
                             <!-- Body -->
                             <div class="card-body">
                                 <!-- Form -->
-                                <form>
+                                <form action="./form/send.php" method="post">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control form-control-flush" id="cardName" placeholder="Name">
-                                        <label for="cardName">Nombre</label>
+                                        <input type="text" class="form-control form-control-flush" id="act_name" name="act_name" placeholder="Nombre">
+                                        <label for="act_name">Nombre</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="email" class="form-control form-control-flush" id="cardEmail" placeholder="Email">
-                                        <label for="cardEmail">Email</label>
+                                        <input type="email" class="form-control form-control-flush" id="act_email" name="act_email" placeholder="Email">
+                                        <label for="act_email">Email</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="tel" class="form-control form-control-flush" id="cardTel" placeholder="Teléfono">
-                                        <label for="cardTel">Teléfono</label>
+                                        <input type="tel" class="form-control form-control-flush" id="act_tel" name="act_tel" placeholder="Teléfono">
+                                        <label for="act_tel">Teléfono</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="text" class="form-control form-control-flush" id="cardMessage" placeholder="Message">
-                                        <label for="cardMessage">Mensaje</label>
+                                        <input type="text" class="form-control form-control-flush" id="act_message" name="act_message" placeholder="Mensaje">
+                                        <label for="act_message">Mensaje</label>
                                     </div>
                                     <div class="mt-6">
                                         <button class="btn w-100 btn-danger lift" type="submit">Enviar ahora</button>
